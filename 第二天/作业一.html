@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        /*var i = 1;
+        while(i<=100){
+            if (i%2!=0) {
+                console.log(i)
+            }
+            i++
+        }
+        var i = 1;
+        var sum = 1;
+        while(i<=100){
+            if (i%2!=0) {
+                sum+=i
+            }
+            i++
+        }
+        console.log(sum)*/
+        
+
+        /*1，判断一个年份是闰年还是平年
+    闰年：能被4整除，但不能被100整除的年份 或者 能被400整除的年份
+    var year = 1990;
+    闰年 ： 输出 闰年    平年   输出  平年
+    var year = 2000;
+    if (year%4===0&&year%100!=0||year%400===0) {
+        console.log('闰年')
+    }else{
+        console.log('平年')
+    }*/
+    /*2，判断一个人的年龄是否满18岁(是否成年)
+    满 18   输出 ： 成年    未满 18   输出： 未成年
+    var year = 19;
+    if (year<18) {
+        console.log('未成年')
+    }else{
+        console.log('成年')
+    }*/
+     /*5,求1-100之间所有数的乘积
+    var i = 1;
+    var j = 1;
+    do{
+        j*=i
+        i++
+    }while(i<=100)
+    console.log(j)*/
+    /*7,计算1-100之间能被3整除的数的和
+    var i =1;
+    var sum = 0;
+    while(i<=100){
+        if (i%3===0) {
+            sum+=i
+        }
+        i++
+    }
+    console.log(sum*/
+/*8,计算1-100之间不能被7整除的数的和
+    // 讲解思路。如果不会写程序，可以先把数学公式准备好
+var sum = 0;
+for (var i = 1; i <=100; i++) {
+    if (i%7!=0) {
+        sum+=i
+    }
+    i++
+}
+console.log(sum)*/
+        2、斐波那契数列
+            有个人想知道，一年之内一对兔子能繁殖多少对？于是就筑了一道围墙把一对兔子关在里面。已知一对兔子每个月可以生一对小兔子，而一对兔子从出生后第3个月起每月生一对小兔子。假如一年内没有发生死亡现象，那么，一对兔子一年内（12个月）能繁殖成多少对？
+            兔子的规律为数列，1，1，2，3，5，8，13，21, 34, 55, 89, 144
+            var n1 = 1;
+            var n2 = 1;
+            var sum = 0;
+            for (var i = 3; i <= 11; i++) {
+                第3个月   n1:第1个月的兔子数   n2:第二个月的兔子数
+                sum = n1 + n2;
+
+                让n1和n2往后推一个月
+                n1 = n2;
+                n2 = sum;
+
+                第4个月   n1:第2个月的兔子数   n2:第3个月的兔子数
+                sum = n1 + n2;
+            }
+            console.log(sum);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
